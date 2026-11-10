@@ -35,3 +35,7 @@ section.block { padding-block: clamp(64px, 10vw, 128px); border-top: 1px solid v
 .js .reveal { opacity: 0; transform: translateY(8px); transition: opacity 300ms var(--ease), transform 300ms var(--ease); }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 @media print { .site-header, .cta-row, .icon-btn { display: none; } :root { --bg: #fff; --text: #000; } }
+
+.bullets { padding-left: 1.2em; margin: 0 0 var(--s4); max-width: 68ch; }
+.bullets li { margin-bottom: var(--s2); }
+.card .date { margin: 0 0 var(--s2); }

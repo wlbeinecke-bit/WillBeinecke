@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T19:45:00-05:00",
+  "updated": "2026-11-09T20:05:00-05:00",
   "phases": [
     "Plan",
     "Build",
@@ -156,6 +156,15 @@
         "T15"
       ],
       "status": "doing"
+    },
+    {
+      "id": "T17",
+      "phase": "Build",
+      "title": "Insert resume content into site",
+      "deps": [
+        "T6"
+      ],
+      "status": "done"
     }
   ]
 }
