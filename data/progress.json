@@ -146,16 +146,16 @@
       "deps": [
         "T14"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "id": "T16",
       "phase": "Deploy",
-      "title": "Enable Pages, verify live, fix absolute URLs",
+      "title": "Deploy on Vercel and verify live",
       "deps": [
         "T15"
       ],
-      "status": "todo"
+      "status": "doing"
     }
   ]
 }
