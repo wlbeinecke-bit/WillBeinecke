@@ -1,0 +1,161 @@
+{
+  "updated": "2026-11-09T19:45:00-05:00",
+  "phases": [
+    "Plan",
+    "Build",
+    "Polish",
+    "Deploy"
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "phase": "Plan",
+      "title": "Finalize content outline, palette, type, sitemap",
+      "deps": [],
+      "status": "done"
+    },
+    {
+      "id": "T2",
+      "phase": "Plan",
+      "title": "git init, folders, .gitignore, .nojekyll, README",
+      "deps": [
+        "T1"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T3",
+      "phase": "Build",
+      "title": "progress.json schema + dashboard data",
+      "deps": [
+        "T1"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T4",
+      "phase": "Build",
+      "title": "CSS tokens, reset, base, dark theme",
+      "deps": [
+        "T2"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T5",
+      "phase": "Build",
+      "title": "Content placeholders in index.html (static, no JSON)",
+      "deps": [
+        "T1"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T6",
+      "phase": "Build",
+      "title": "index.html semantic markup + meta",
+      "deps": [
+        "T4",
+        "T5"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T7",
+      "phase": "Build",
+      "title": "Layout/components CSS (header, hero, cards, footer)",
+      "deps": [
+        "T6"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T8",
+      "phase": "Build",
+      "title": "theme.js toggle with safe persistence",
+      "deps": [
+        "T4",
+        "T6"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T9",
+      "phase": "Build",
+      "title": "main.js nav, active link, scroll reveal",
+      "deps": [
+        "T6",
+        "T7"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T10",
+      "phase": "Build",
+      "title": "dashboard.html + dashboard.js/css",
+      "deps": [
+        "T3",
+        "T4"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T11",
+      "phase": "Polish",
+      "title": "Favicon and social image",
+      "deps": [
+        "T7"
+      ],
+      "status": "todo"
+    },
+    {
+      "id": "T12",
+      "phase": "Polish",
+      "title": "Accessibility audit (keyboard, contrast, reduced motion)",
+      "deps": [
+        "T8",
+        "T9",
+        "T10"
+      ],
+      "status": "doing"
+    },
+    {
+      "id": "T13",
+      "phase": "Polish",
+      "title": "SEO files: sitemap, robots, JSON-LD, 404",
+      "deps": [
+        "T6"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "T14",
+      "phase": "Polish",
+      "title": "Responsive check and fixes",
+      "deps": [
+        "T11",
+        "T12",
+        "T13"
+      ],
+      "status": "todo"
+    },
+    {
+      "id": "T15",
+      "phase": "Deploy",
+      "title": "Commit, add remote, push (you supply token)",
+      "deps": [
+        "T14"
+      ],
+      "status": "todo"
+    },
+    {
+      "id": "T16",
+      "phase": "Deploy",
+      "title": "Enable Pages, verify live, fix absolute URLs",
+      "deps": [
+        "T15"
+      ],
+      "status": "todo"
+    }
+  ]
+}
